@@ -1468,20 +1468,3 @@ cos(x)  #Косинус угла x, задаваемого в радианах
 sin(x)  #Синус угла x, задаваемого в радианах
 tan(x)  #Тангенс угла x, задаваемого в радианах
 math.pi # число пи
-
-
-import datetime
-
-
-def test():
-    return datetime.date.today().replace(day=1), datetime.date.today().replace(day=1) + datetime.timedelta(minutes=30)
-
-
-print(datetime.now().replace(day=1, hour=0, minute=0, second=0, microsecond=0))
-
-formatTT = 'ММ'
-print(', '.join(formatTT))
-formatTT = formatTT.split()
-print(formatTT)
-print("""Принадлежность - 
-{0}""".format("'" + "', '".join(formatTT) + "'"))
